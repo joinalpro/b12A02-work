@@ -4,8 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 02 - Flower shop</title>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/abe88cc625.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- tailwind css script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-nav: #8987a1;
+        --color-home: #252432;
+        --color-primary: #e95a08;
+        --color-secondary: #000000;
+        --color-paragrahp: #00000080;
+        --color-head-title: #ffffff;
+        --color-t-footer: #6b7280;
+        --font-inter: "Inter", sans-serif;
+        --font-noto: "Noto Serif", serif;
+      }
+    </style>
 </head>
 <body>
-    
+    <header class="px-4 lg:px-0 max-w-5xl mx-auto">
+      <!-- navbar section start -->
+      <nav class="flex items-center justify-between h-10 md:h-16">
+        <div class="h-10 md:h-16">
+          <img class="h-full" src="./assets/logo.png" alt="" />
+        </div>
+        <div class="font-inter flex gap-10">
+          <ul class="space-x-8 hidden md:flex">
+            <a href="#" class="text-home font-bold">Home</a
+            ><a href="#" class="text-nav">Shop</a
+            ><a href="#" class="text-nav">About us</a>
+          </ul>
+          <span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart ($56)
+          </span>
+        </div>
+      </nav>
+      <!-- navbar section end -->
+
+      <!-- Banner section start -->
+      <div class="flex flex-col-reverse md:flex-row md:items-center justify-between h-screen">
+        <!-- Title and paragraph on the left -->
+        <div class="space-y-3">
+          <h1 class="lg:text-6xl md:text-4xl text-2xl font-bold font-noto">
+            ALWAYS <span class="text-primary">FRESHF LOWERS</span>
+          </h1>
+          <p class="text-paragrahp w-full max-w-[45ch] text-sm md:text-lg lg:text-xl">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <!-- Image on the right -->
+        <div>
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
+      </div>
+      <!-- Banner section end -->
+    </header>
+    <main>
+        <section class="px-4 lg:px-0 max-w-5xl mx-auto">
+            <!-- Plants  section start -->
+            <section class="lg:mt-40 mt-15">
+          <div class="text-center space-y-4">
+            <h1 class="md:text-5xl text-2xl font-bold font-inter">
+              <span class="text-primary">Our</span> Plants
+            </h1>
+            <p class="text-paragrahp w-full max-w-[70ch] mx-auto text-sm md:text-lg lg:text-xl">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 my-10">
+            <!-- image 1 -->
+            <div class="space-y-3">
+              <img
+                class="border w-full border-dashed border-gray-300"
+                src="./assets/sample-flower-image.png"/>
+              <div class="text-center space-y-3">
+                <div>
+                  <h4 class="text-[#111111] text-xl font-medium font-inter">
+                    Lily Blossom
+                  </h4>
+                  <h4 class="text-[#111111] text-xl font-bold font-inter">
+                    20 USD
+                  </h4>
+                </div>
+                <button
+                  class="bg-primary w-full font-semibold font-inter text-head-title py-2">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <!-- image 2 -->
+            <div class="space-y-3">
+              <img
+                class="w-full"
+                src="./assets/sample-flower-image.png"
+                alt=""/>
+              <div class="text-center space-y-3">
+                <div>
+                  <h4 class="text-[#111111] text-xl font-medium font-inter">
+                    Lily Blossom
+                  </h4>
+                  <h4 class="text-[#111111] text-xl font-bold font-inter">
+                    20 USD
+                  </h4>
+                </div>
+                <button class="bg-primary w-full font-semibold font-inter text-head-title py-2">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <!-- image 3 -->
+            <div class="space-y-3">
+              <img
+                class="w-full"
+                src="./assets/sample-flower-image.png"
+                alt=""/>
+              <div class="text-center space-y-3">
+                <div>
+                  <h4 class="text-[#111111] text-xl font-medium font-inter">
+                    Lily Blossom
+                  </h4>
+                  <h4 class="text-[#111111] text-xl font-bold font-inter">
+                    20 USD
+                  </h4>
+                </div>
+                <button class="bg-primary w-full font-semibold font-inter text-head-title py-2">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <!-- image 4 -->
+            <div class="space-y-3">
+              <img
+                class="w-full"
+                src="./assets/sample-flower-image.png"
+                alt="" />
+              <div class="text-center space-y-3">
+                <div>
+                  <h4 class="text-[#111111] text-xl font-medium font-inter">
+                    Lily Blossom
+                  </h4>
+                  <h4 class="text-[#111111] text-xl font-bold font-inter">
+                    20 USD
+                  </h4>
+                </div>
+                <button class="bg-primary w-full font-semibold font-inter text-head-title py-2">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Plants  section end -->
+        </section>
+    </main>
 </body>
 </html>
